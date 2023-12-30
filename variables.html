@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart Quantity</title>
+        <link rel="stylesheet" href="variables.css">
+    </head>
+    <body>
+        <h1>Cart Quantity</h1>
+        <img src="rainbow_roller_skates.jpg">
+        <h2>Rainbow Quad Roller Skates</h2>
+        <h3 id="one">£40.99</h3>
+        <h3 id="two">In Stock</h3>
+
+        <button class="CQ" onclick="
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Show Quantity</button>
+
+        <button class="Q1" onclick="
+            cartQuantity += 1;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Add to Cart</button>
+
+        <button class="Q2" onclick="
+            cartQuantity += 2;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        ">+2</button>
+
+        <button class="Q3" onclick="
+            cartQuantity += 3;
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        ">+3</button>
+
+        <button class="Q0" onclick="
+            cartQuantity = 0;
+            console.log(`Cart was reset.`);
+            console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Reset Cart</button>
+
+        <script src="variables.js">
+            let cartQuantity = 0;
+        </script>
+    </body>
+</html>
